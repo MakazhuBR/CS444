@@ -1,5 +1,8 @@
 # WarrenDrive
 
 Computer Networks Independent Study Final project
-Sewanee: The University of the South
-Class of 2024
+
+Usage: python server.py and follow instruction on terminal
+
+TODO: implement a service manager. this class will help to independently handle fetch (POST/GET) requests.
+
