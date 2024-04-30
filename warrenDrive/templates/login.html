@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./static/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="./static/images/logo.jpeg" alt="Logo" class="logo">
+    <h1>Warren Drive</h1>
+    <form id="login-form" action="/login" method="post">
+      <div class="input-group">
+        <input name="username" id="username" placeholder="username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" id="password" placeholder="password" required>
+      </div>
+      <p id="loginStatus"></p>
+      <button type="submit">Sign in</button>
+    </form>
+    <a href="#">Forgot password?</a>
+  </div>
+</body>
+<script src="./static/login.js"></script>
+</html>

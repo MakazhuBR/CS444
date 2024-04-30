@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Drive</title>
+  <link href="./static/home.css" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <div class="logo">
+      <img src="./static/images/logo.jpeg" style="background-image: none;" alt="Drive Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Drive">
+      <button>Search</button>
+    </div>
+    <div class="user-menu">
+      <button>Settings</button>
+      <img src="profile_pic.png" alt="Profile">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button id="new-button"> New </button>
+      </li>
+      <li id="mydrive">My Drive</li>
+      <li id="shared">Shared with me</li>
+      <li id="trash">Trash</li>
+    </ul>
+  </nav>
+  <main>
+    <div id="file-list" class="file-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Last Opened</th>
+            <th>Owner</th>
+            <th>Location</th>
+            <th>Options</th>  </tr>
+        </thead>
+        <tbody id="file-list-content"> </tbody>
+      </table>
+    </div>
+    <div id="popover" class="popover">
+      <h3>Upload Files</h3>
+          <form id="upload-form">
+            <input type="file" id="file-upload" name="file">
+            <button id="upload-button" type="button" onclick="uploadData()">Upload File</button>
+          </form>
+          <h4 id="uploadMessage"></h4>
+          <button id="uploadDone"> Done</button>
+    </div>
+  </main>
+</body>
+
+<script src="./static/home.js" > </script>
+</html>
+
